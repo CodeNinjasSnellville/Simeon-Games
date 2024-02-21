@@ -38,3 +38,15 @@ void Start()
     //Object Height equals the size of the height of the sprite
     objectHeight = transform.GetComponent<Sprite Renderer > ().bounds.size.y / 2;
 }
+
+//Update is called once per frame
+void Update()
+{
+    //if the left mouse button is clicked
+    if (Input.GetMouseButtonDown(0))
+    {
+        //The bird will float up on the Y axi
+        //and float back down on Y axis
+        rd.Velocity = Vector2.up * velocity;
+    }
+}
