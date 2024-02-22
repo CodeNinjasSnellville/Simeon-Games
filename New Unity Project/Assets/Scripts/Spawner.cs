@@ -16,3 +16,7 @@ public class Spawner : MonoBehaviour
 
     }
 }
+
+
+//Object that we will attach to the script for spawning object
+[Header("Spikes object for controlling the game")]
