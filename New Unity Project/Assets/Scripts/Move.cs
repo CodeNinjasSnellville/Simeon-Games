@@ -16,3 +16,7 @@ public class Move : MonoBehaviour
 
     }
 }
+
+[Header("Default Speed")]
+//Speed for the movement
+public float speed;
