@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Collectibles : MonoBehaviour
+
+    //If an object collides with a trigger
+    private void OnTriggerEnter2D(Collider2D collision)
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    //Add score 
+    Score.score++;
 }
+    { }
