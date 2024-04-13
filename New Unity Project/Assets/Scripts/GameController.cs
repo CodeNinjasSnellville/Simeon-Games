@@ -40,3 +40,13 @@ public class GameController : MonoBehaviour
         [Header("Spawner Object for spawning object in game")]
         public GameObject spawner;
     }
+
+puiblc void GameOver()
+{
+        //Game over UI is visible 
+        gameOverCanvas.setActive(true);
+        //The spawer is now invisible in the game  
+        spawner.SetActive(false);
+        //The speed for the game is now at a stopping state
+        Time.timeScale = 0;
+}
