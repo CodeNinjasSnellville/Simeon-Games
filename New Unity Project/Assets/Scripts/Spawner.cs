@@ -3,12 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
+<<<<<<< HEAD
 {
 
     //InstantiateObjects Function
     void Instantiate()
-    {
+=======
+{ 
 
+    
+    //Object that we will attach to the script for spawning object
+    [Header("Spikes object for controlling the game")]
+    public GameObject spikes;
+    //Height position of the spikes
+    [Header("Default Height")]
+    public float height;
+
+
+    // Start is called before the frist frame update
+    void Start()
+>>>>>>> 3fed04dd360afd5df8dccf3222a5500f1888fea5
+    {
+        //start function repeating every 4 seconds
+        InvokeRepeating("InstantiateObjects", 1f, 4f);
     }
     //Object that we will attach to the script for spawning object
     [Header("Spikes object for controlling the game")]
@@ -26,11 +43,13 @@ public class Spawner : MonoBehaviour
     }
 
 
+
     // Update is called once per frame
     void Update()
     {
         //Position for the gameobjects
         transform.position = new Vector3(5, Random.Range(-height, height), 0);
+<<<<<<< HEAD
 
     }
 //InstantiateObjects Function
@@ -40,3 +59,17 @@ void InstantiateObjects()
         Instantiate(spikes, transform.position, transform.rotation);
 }
 }
+=======
+    }
+
+    //InstantiateObjects Function
+    void Instantiate()
+    {
+        //Spawn object by postion and rotaion
+        Instantiate(spikes, transform.position, transform.rotation);
+}
+}
+
+
+
+>>>>>>> 3fed04dd360afd5df8dccf3222a5500f1888fea5

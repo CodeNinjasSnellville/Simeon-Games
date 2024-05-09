@@ -38,3 +38,14 @@ public class PlayerControls : MonoBehaviour
         }
     }
 }
+
+
+//Function where the the player collides with a object
+private void OnCollisionEnter2D(Collision2D collision)
+{
+    if(collision.gameObject.tag == "HighSpike" || collision.gameObject.tag == "LowSpike" )
+    {
+         /Game is Attribute a stopping state
+            Time.timeScale = 0;
+    }
+}
