@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     }
     //Platform gameobject
     [Header("Platform Object")]
-    public GameObject platform
+    public GameObject platform;
     //Defaut position for platform
     float pos = 0;
    
@@ -31,6 +31,6 @@ public class GameController : MonoBehaviour
     void SpawnPlatforms()
     {
         //Spawn platforms randomly on the x axis and place them on the Y axis every 2.5
-        Instantiate(platform, new Vector)
+        Instantiate(platform, new Vector(Random.value * 10 -5f, pos, 0.5f), Quaternion.identity);
     }
 }
